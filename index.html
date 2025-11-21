@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>POLLERIA SAHUR</title>
+
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <section class="principal" id="inicio">
+    <div class="overlay"></div>
+    <div class="principal-contenido">
+      <h1 class="titulo-marca">Sahur</h1>
+      <h2 class="subtitulo">El Sabor Auténtico del Pollo a la Brasa</h2>
+      <p class="descripcion">
+        Desde 1995, preparamos el mejor pollo a la brasa de la ciudad con recetas 
+        tradicionales y ingredientes frescos que conquistan tu paladar.
+      </p>
+      <div class="botones">
+        <a href="#" class="boton btn-pedido">📞 Hacer Pedido</a>
+        <a href="#" class="boton btn-ubicacion">📍 Ver Ubicación</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu" id="menu">
+    <div class="menu-contenido">
+      <h2 class="menu-titulo">Nuestro Menú</h2>
+      <p class="menu-descripcion">
+        Descubre nuestros deliciosos platos preparados con los mejores
+        ingredientes y el sabor tradicional que nos caracteriza.
+      </p>
+
+      <div class="menu-filtros">
+        <button class="filtro-btn activo" data-category="pollo">🍗 Pollo a la Brasa</button>
+        <button class="filtro-btn" data-category="parrillas">🥩 Parrillas</button>
+        <button class="filtro-btn" data-category="acompanamientos">🍟 Acompañamientos</button>
+        <button class="filtro-btn" data-category="bebidas">🥤 Bebidas</button>
+      </div>
+
+      <div class="menu-grid">
+
+        <div class="plato-card" data-category="pollo">
+          <img src="./imagenes/menu 1/pollo entero.jpg" alt="Pollo a la Brasa Entero" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Pollo Entero a la Brasa</h3>
+              <p class="plato-precio">S/. 48.00</p>
+            </div>
+            <p class="plato-descripcion">Pollo entero marinado 24h con nuestras especias secretas.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="pollo">
+          <img src="./imagenes/menu 1/medio pollo.jpg" alt="Medio Pollo a la Brasa" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">1/2 Pollo a la Brasa</h3>
+              <p class="plato-precio">S/. 26.00</p>
+            </div>
+            <p class="plato-descripcion">Media porción de nuestro delicioso pollo con papas y ensalada.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="pollo">
+          <img src="./imagenes/menu 1/un cuarto.jpg" alt="Un cuarto de Pollo a la Brasa" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">1/4 Pollo a la Brasa</h3>
+              <p class="plato-precio">S/. 15.00</p>
+            </div>
+            <p class="plato-descripcion">Cuarto de pollo tierno y jugoso, perfecto para una persona.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="parrillas">
+          <img src="./imagenes/menu 2/parrillada familiar.jpg" alt="Parrillada Familiar" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Parrillada Familiar</h3>
+              <p class="plato-precio">S/. 85.00</p>
+            </div>
+            <p class="plato-descripcion">Anticuchos, chorizo, mollejitas y costillas para 4 personas.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="parrillas">
+          <img src="./imagenes/menu 2/antichuchos.jpg" alt="Anticuchos de Corazón" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Anticuchos de Corazón</h3>
+              <p class="plato-precio">S/. 18.00</p>
+            </div>
+            <p class="plato-descripcion">4 anticuchos de corazón marinados con ají panca.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="parrillas">
+          <img src="./imagenes/menu 2/chorizo parrillero.jpg" alt="Chorizo Parrillero" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Chorizo Parrillero</h3>
+              <p class="plato-precio">S/. 22.00</p>
+            </div>
+            <p class="plato-descripcion">Chorizo artesanal a la parrilla con chimichurri.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="acompanamientos">
+          <img src="./imagenes/menu 3/papa frita.jpg" alt="Papas Fritas Criollas" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Papas Fritas Criollas</h3>
+              <p class="plato-precio">S/. 8.00</p>
+            </div>
+            <p class="plato-descripcion">Papas doradas y crocantes, el acompañamiento perfecto.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="acompanamientos">
+          <img src="./imagenes/menu 3/ensalada mixta.jpg" alt="Ensalada Mixta" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Ensalada Mixta</h3>
+              <p class="plato-precio">S/. 12.00</p>
+            </div>
+            <p class="plato-descripcion">Lechuga, tomate, pepino, zanahoria y palta fresca.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="acompanamientos">
+          <img src="./imagenes/menu 3/choclo con queso.jpg" alt="Choclo con Queso" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Choclo con Queso</h3>
+              <p class="plato-precio">S/. 10.00</p>
+            </div>
+            <p class="plato-descripcion">Choclo tierno con queso fresco y mantequilla.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="bebidas">
+          <img src="./imagenes/menu 4/chicha morada.jpg" alt="Chicha Morada" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Chicha Morada</h3>
+              <p class="plato-precio">S/. 6.00</p>
+            </div>
+            <p class="plato-descripcion">Refrescante chicha morada casera con especias.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="bebidas">
+          <img src="./imagenes/menu 4/inka cola.jpg" alt="Inca Kola" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Inca Kola</h3>
+              <p class="plato-precio">S/. 5.00</p>
+            </div>
+            <p class="plato-descripcion">La bebida dorada del Perú, bien helada.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+        <div class="plato-card" data-category="bebidas">
+          <img src="./imagenes/menu 4/limonada frozen.jpg" alt="Limonada Frozen" class="plato-img">
+          <div class="plato-info">
+            <div class="plato-header">
+              <h3 class="plato-nombre">Limonada Frozen</h3>
+              <p class="plato-precio">S/. 8.00</p>
+            </div>
+            <p class="plato-descripcion">Limonada helada con hielo frappe, refrescante.</p>
+            <a href="#" class="plato-boton">🛒 Agregar al Pedido</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="historia" id="historia">
+    <div class="historia-contenido">
+      
+      <div class="historia-texto">
+        <h2 class="historia-titulo">Nuestra Historia</h2>
+        
+        <p class="historia-parrafo">
+          Desde 1995, <span class="nombre-marca">Sahur</span> ha sido sinónimo de tradición y sabor en la 
+          preparación del mejor pollo a la brasa de la ciudad.
+        </p>
+        
+        <p class="historia-parrafo">
+          Nuestra receta secreta, transmitida de generación en generación, combina 
+          especias cuidadosamente seleccionadas con técnicas de cocción que 
+          logran ese sabor único que tanto amas.
+        </p>
+        
+        <p class="historia-parrafo">
+          Cada pollo es marinado durante 24 horas y cocinado lentamente en 
+          nuestros hornos especiales, garantizando una piel dorada y crocante con 
+          una carne jugosa y tierna.
+        </p>
+
+        <div class="historia-estadisticas">
+          <div class="estadistica-item">
+            <h3 class="estadistica-numero">28+</h3>
+            <p class="estadistica-etiqueta">Años de Experiencia</p>
+          </div>
+          <div class="estadistica-item">
+            <h3 class="estadistica-numero">50K+</h3>
+            <p class="estadistica-etiqueta">Clientes Satisfechos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="historia-imagen-contenedor">
+        <img src="./imagenes/chef.png" alt="Chef cocinando pollo a la brasa" class="historia-img">
+        
+        <div class="sello-receta">
+          <span class="sello-icono">🎖️</span>
+          <div class="sello-texto">
+            <strong>Receta Original</strong>
+            <span>Desde 1995</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="ubicacion-seccion" id="ubicacion">
+    <div class="ubicacion-encabezado">
+      <h2 class="ubicacion-titulo">Nuestra Ubicación</h2>
+      <p class="ubicacion-descripcion">Visítanos en nuestro acogedor local o solicita delivery a domicilio</p>
+    </div>
+
+    <div class="ubicacion-contenedor">
+      
+      <div class="tarjeta-info">
+        <h3 class="info-titulo">Información de Contacto</h3>
+        
+        <div class="info-lista">
+          <div class="info-item">
+            <span class="info-icono">📍</span>
+            <div class="info-texto">
+              <strong>Dirección</strong>
+              <p>Av. Los Robles 245, San Isidro</p>
+              <p>Lima, Perú</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icono">📞</span>
+            <div class="info-texto">
+              <strong>Teléfono</strong>
+              <p>+51 1 234-5678</p>
+              <p>+51 987-654-321</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icono">🕒</span>
+            <div class="info-texto">
+              <strong>Horarios</strong>
+              <p>Lun - Dom: 11:00 AM - 10:00 PM</p>
+              <p>Delivery disponible</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icono">✉️</span>
+            <div class="info-texto">
+              <strong>Email</strong>
+              <p>contacto@polleriasahur.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-botones">
+          <a href="#" class="boton-rojo">📞 Llamar Ahora</a>
+          <a href="#" class="boton-blanco">➤ Cómo Llegar</a>
+        </div>
+      </div>
+
+      <div class="tarjeta-mapa">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.666013626786!2d-77.0366258!3d-12.0968943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c86725000001%3A0x6a09040333333333!2sSan%20Isidro%2C%20Lima!5e0!3m2!1ses!2spe!4v1699999999999!5m2!1ses!2spe" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="contacto-seccion" id="contacto">
+    
+    <div class="contacto-encabezado">
+      <h2 class="contacto-titulo">Contáctanos</h2>
+      <p class="contacto-subtitulo">¿Tienes alguna pregunta o sugerencia? Nos encantaría escucharte</p>
+    </div>
+
+    <div class="contacto-contenedor">
+      
+      <div class="formulario-columna">
+        <h3 class="form-titulo">Envíanos un Mensaje</h3>
+        <p class="form-descripcion">Completa el formulario y nos pondremos en contacto contigo lo antes posible.</p>
+
+        <form class="formulario">
+          
+          <div class="fila-doble">
+            <div class="campo-grupo">
+              <label for="nombre">Nombre Completo *</label>
+              <input type="text" id="nombre" placeholder="Tu nombre completo" class="input-campo">
+            </div>
+            
+            <div class="campo-grupo">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="+51 987 654 321" class="input-campo">
+            </div>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="email">Email *</label>
+            <input type="email" id="email" placeholder="tu@email.com" class="input-campo">
+          </div>
+
+          <div class="campo-grupo">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" placeholder="Cuéntanos tu consulta o comentario..." class="input-campo area-texto"></textarea>
+            <p class="contador-caracteres">0/500 caracteres</p>
+          </div>
+
+          <button type="submit" class="boton-enviar">➤ Enviar Mensaje</button>
+
+        </form>
+      </div>
+
+      <div class="info-tarjeta-roja">
+        <h3 class="info-roja-titulo">¿Por qué elegirnos?</h3>
+        
+        <div class="lista-beneficios">
+          
+          <div class="beneficio-item">
+            <div class="icono-circulo">🏅</div>
+            <div class="beneficio-texto">
+              <strong>Calidad Garantizada</strong>
+              <p>Ingredientes frescos y recetas tradicionales desde 1995</p>
+            </div>
+          </div>
+
+          <div class="beneficio-item">
+            <div class="icono-circulo">⏱️</div>
+            <div class="beneficio-texto">
+              <strong>Servicio Rápido</strong>
+              <p>Delivery en 30 minutos o menos en toda la zona</p>
+            </div>
+          </div>
+
+          <div class="beneficio-item">
+            <div class="icono-circulo">❤️</div>
+            <div class="beneficio-texto">
+              <strong>Atención Personalizada</strong>
+              <p>Tratamos a cada cliente como parte de nuestra familia</p>
+            </div>
+          </div>
+
+          <div class="beneficio-item">
+            <div class="icono-circulo">🛡️</div>
+            <div class="beneficio-texto">
+              <strong>Higiene Total</strong>
+              <p>Protocolos sanitarios estrictos para tu seguridad</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="redes-sociales">
+          <p>Síguenos en redes sociales</p>
+          <div class="iconos-sociales">
+            <a href="#" class="social-btn">f</a>
+            <a href="#" class="social-btn">ig</a>
+            <a href="#" class="social-btn">w</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="pie-pagina">
+    <div class="footer-contenedor">
+      
+      <div class="columna-footer">
+        <h2 class="footer-logo">Sahur</h2>
+        <p class="footer-texto">
+          Desde 1995 preparando el mejor pollo a la brasa con recetas tradicionales y el 
+          sabor auténtico que tanto amas.
+        </p>
+        <div class="footer-sociales">
+          <a href="#" class="social-btn-rojo">f</a>
+          <a href="#" class="social-btn-rojo">ig</a>
+          <a href="#" class="social-btn-rojo">w</a>
+          <a href="#" class="social-btn-rojo">tk</a>
+        </div>
+      </div>
+
+      <div class="columna-footer">
+        <h3 class="footer-titulo">Enlaces Rápidos</h3>
+        <ul class="lista-enlaces">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#menu">Nuestro Menú</a></li>
+          <li><a href="#historia">Sobre Nosotros</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="columna-footer">
+        <h3 class="footer-titulo">Contacto</h3>
+        <ul class="lista-contacto">
+          <li>
+            <span>📍</span> Av. Los Robles 245<br> San Isidro, Lima
+          </li>
+          <li>
+            <span>📞</span> +51 1 234-5678
+          </li>
+          <li>
+            <span>✉️</span> contacto@polleriasahur.com
+          </li>
+        </ul>
+      </div>
+
+      <div class="columna-footer">
+        <h3 class="footer-titulo">Horarios</h3>
+        <p class="horario-texto">Lunes - Domingo</p>
+        <p class="horario-hora">11:00 AM - 10:00 PM</p>
+        
+        <div class="caja-delivery">
+          <strong>¡Delivery Gratis!</strong>
+          <p>En pedidos mayores a S/. 50</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="barra-inferior">
+      <div class="contenido-inferior">
+        <p>© 2024 Pollería Sahur. Todos los derechos reservados.</p>
+        <div class="enlaces-legales">
+          <a href="#">Términos y Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

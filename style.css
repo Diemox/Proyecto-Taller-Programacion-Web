@@ -924,4 +924,187 @@ body {
     width: 80%;            
     margin: 8px 0;         
   }
+
+}
+
+
+/* Botón flotante */
+.carrito-icono {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #d62828;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+.carrito-icono:hover {
+    transform: scale(1.1);
+}
+
+#contador-carrito {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #fde047; /* Amarillo de tu marca */
+    color: #d62828;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+/* Sidebar (Panel lateral) */
+.carrito-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px; /* Oculto inicialmente */
+    width: 350px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    z-index: 1001;
+    transition: right 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrito-sidebar.abierto {
+    right: 0;
+}
+
+.carrito-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    display: none;
+}
+
+.carrito-overlay.abierto {
+    display: block;
+}
+
+/* Contenido del Sidebar */
+.carrito-header {
+    background-color: #d62828;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cerrar-carrito {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.carrito-items {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.carrito-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.item-info h4 {
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.item-info p {
+    font-size: 0.85rem;
+    color: #d62828;
+    font-weight: bold;
+}
+
+.item-cantidad {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-cantidad {
+    background: #eee;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-eliminar {
+    color: #999;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.btn-eliminar:hover {
+    color: #d62828;
+}
+
+.carrito-footer {
+    padding: 20px;
+    border-top: 2px solid #eee;
+    background-color: #f9f9f9;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.boton-pedido {
+    width: 100%;
+    padding: 15px;
+    background-color: #25D366; /* Color WhatsApp */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.boton-pedido:hover {
+    background-color: #128C7E;
+}
+
+@media (max-width: 600px) {
+    .carrito-sidebar {
+        width: 100%;
+        right: -100%;
+    }
 }

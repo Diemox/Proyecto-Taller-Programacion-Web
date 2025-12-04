@@ -238,6 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.appendChild(notificacion);
         setTimeout(() => notificacion.remove(), 2000);
     }
+
+    
     
     // Animación simple para notificaciones (agregar al style en JS o CSS)
     const styleSheet = document.createElement("style");
@@ -250,4 +252,46 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     `;
     document.head.appendChild(styleSheet);
+
+// --- LÓGICA DEL FORMULARIO DE CONTACTO (WHATSAPP) ---
+
+    const formularioContacto = document.querySelector('.formulario');
+    
+    if (formularioContacto) {
+        formularioContacto.addEventListener('submit', (e) => {
+            e.preventDefault(); // Evita que la página se recargue
+
+            // 1. Capturar los valores de los inputs
+            const nombre = document.querySelector('#nombre').value;
+            const telefono = document.querySelector('#telefono').value;
+            const email = document.querySelector('#email').value;
+            const mensajeUsuario = document.querySelector('#mensaje').value;
+
+            // 2. Validar que no estén vacíos (Opcional, pero recomendado)
+            if (nombre.trim() === "" || mensajeUsuario.trim() === "") {
+                alert("Por favor, completa al menos tu nombre y el mensaje.");
+                return;
+            }
+
+            // 3. Construir el mensaje para WhatsApp
+            // Usamos %0A para los saltos de línea y *texto* para negritas
+            let mensajeWhatsApp = `Hola *Pollería Sahur*, tengo una consulta desde la web:%0A%0A`;
+            mensajeWhatsApp += `👤 *Nombre:* ${nombre}%0A`;
+            mensajeWhatsApp += `📞 *Teléfono:* ${telefono}%0A`;
+            mensajeWhatsApp += `📧 *Email:* ${email}%0A%0A`;
+            mensajeWhatsApp += `📝 *Mensaje:*%0A${mensajeUsuario}`;
+
+            // 4. Tu número de teléfono
+            const numeroDestino = "5491176288202"; 
+
+            // 5. Crear la URL y abrirla
+            const url = `https://wa.me/${numeroDestino}?text=${mensajeWhatsApp}`;
+            window.open(url, '_blank');
+
+            // 6. Limpiar el formulario (Opcional)
+            formularioContacto.reset();
+        });
+    }
+
+
 });
